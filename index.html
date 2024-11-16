@@ -1,63 +1,168 @@
-   w<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL21TWJS6L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JL21TWJS6L');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditi Phalswal - Resume</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fed5cc;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            background-color: #ff8474; /* Peach color */
+            color: #fff;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        .navigation {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular Image */
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .about-text h2 {
+            margin: 0;
+            color: #333;
+        }
+        .about-text p {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* Two-column Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .left-column,
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ff8474;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background-color: #ff8474;
+            color: #fff;
+            margin: 5px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #ff8474; /* Changed to the same peach color as header */
+            color: #fff;
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
 <body>
+    <!-- Header Section -->
     <header class="header">
-        <div class="container">
-            <h1>Aditi Phalswal</h1>
-            <p>UI/UX Designer</p>
-        </div>
+        <h1>Aditi Phalswal</h1>
+        <p>UI/UX Designer</p>
     </header>
 
+    <!-- Navigation -->
     <nav class="navigation">
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <main class="container">
+        <!-- About Section -->
         <section id="about" class="about">
-            <div class="about-content">
-                <img src="images/profile.jpg" alt="Aditi Phalswal" class="profile-image">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I'am a UI/UX Designer with 2 years of hands-on experience in crafting user-centered designs. Currently completing a Master’s in UI/UX Development and Design, I bring a strong foundation in both creative and technical aspects of design, dedicated to enhancing user experiences through intuitive, functional interfaces.</p>
-                </div>
+            <img src="mypicture.jpg" alt="Aditi Phalswal's Profile Picture" class="profile-image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a UI/UX Designer with 2 years of hands-on experience in crafting user-centered designs. Currently completing a Master’s in UI/UX Development and Design, I bring a strong foundation in both creative and technical aspects of design, dedicated to enhancing user experiences through intuitive, functional interfaces.</p>
             </div>
         </section>
 
+        <!-- Flex Container for Left and Right Columns -->
         <div class="flex-container">
+            <!-- Left Column -->
             <div class="left-column">
                 <section id="education" class="education">
                     <h2>Education</h2>
                     <article>
-                        <h3>Master in UX/UX Design & Development</h3>
-                        <p>New York Institute of Technology
-2024-2026</p>
+                        <h3>Master in UI/UX Design & Development</h3>
+                        <p>New York Institute of Technology<br>2024-2026</p>
                     </article>
                     <article>
-                        <h3>
-Bachelors in Visual Arts (Animation & multimedia)</h3>
-                        <p>Vogue Institute Of Art and Design 
-2018-2023</p>
+                        <h3>Bachelor in Visual Arts (Animation & Multimedia)</h3>
+                        <p>Vogue Institute of Art and Design<br>2018-2023</p>
                     </article>
                 </section>
 
@@ -66,48 +171,43 @@ Bachelors in Visual Arts (Animation & multimedia)</h3>
                     <ul>
                         <li>Design: UI/UX, Research, Prototyping, Usability</li>
                         <li>Tools: Figma, Adobe XD, Illustrator, HTML/CSS, Java</li>
-                        <li>Product: Strategy, Management, E-commerce, Service Design, Storytelling</li>
-                        
-                   </ul>
+                        <li>Product: Strategy, Management, E-commerce, Storytelling</li>
+                    </ul>
                 </section>
             </div>
 
+            <!-- Right Column -->
             <div class="right-column">
                 <section id="experience" class="experience">
                     <h2>Professional Experience</h2>
                     <article>
-                        <h3>UX Resercher (June 2024-Present)</h3>
-                        <p>Up Strength</p>
-                        <p>As a UX Researcher at Upstrength, I conducted extensive research on the Indian sportswear market, identifying audience preferences through interviews and surveys. I facilitated usability testing sessions to gather user feedback, driving design changes for our website. Additionally, I collaborated with cross-functional teams to develop user personas and journey maps, aligning our strategies with customer needs to boost growth initiatives.</p>
+                        <h3>UX Researcher (June 2024-Present)</h3>
+                        <p><strong>Up Strength</strong></p>
+                        <p>Conducted extensive research on the Indian sportswear market, identifying audience preferences. Facilitated usability testing sessions and collaborated with teams to develop user personas and journey maps, aligning strategies with customer needs.</p>
                     </article>
                     <article>
-                        <h3>
-UI/UX & Game Design Researcher  (March 2024-May 2024)</h3>
-                        <p>New York Institute of Technology</p>
-                        <p>I conducted UI/UX research for the college’s Student Portal page, identifying navigation issues and redesigning the layout to improve responsiveness, reducing bounce rates by 30%. I also led workshops on game design research, helping participants refine game play mechanics and user interfaces. Both projects focused on enhancing user experience through testing and iterative design.
-</p>
+                        <h3>UI/UX & Game Design Researcher (March 2024-May 2024)</h3>
+                        <p><strong>New York Institute of Technology</strong></p>
+                        <p>Led UI/UX research for the Student Portal, identifying navigation issues and improving responsiveness. Conducted game design workshops focused on enhancing mechanics and interfaces through testing and iterative design.</p>
                     </article>
-                <h3>
-Product Designer (Nov 2022- Dec 2023)</h3>
-                        <p>Metastart</p>
-                        <p>Designed the brand system and pitch deck as the only team designer, creating user stories and customer journey maps. 
-Developed a research plan for the discovery phase of a new automation project and led usability testing for key improvements.
-</p>
+                    <article>
+                        <h3>Product Designer (Nov 2022-Dec 2023)</h3>
+                        <p><strong>Metastart</strong></p>
+                        <p>Designed the brand system and pitch deck as the sole team designer. Led usability testing, created user stories, and developed customer journey maps for automation projects.</p>
                     </article>
                 </section>
             </div>
         </div>
     </main>
 
-    <footer class="footer container">
+    <!-- Footer Section -->
+    <footer class="footer">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:aditi.phalswal516@gmail.com">aditi.phalswal516@gmail.com</a></p>
         <div class="social-media">
-            <a href=https://www.linkedin.com/in/aditi-phalswal-99245120b/</i></a>
-            <a href=https://github.com/aphalswa</i></a>
-        
+            <a href="https://www.linkedin.com/in/aditi-phalswal-99245120b/">LinkedIn</a>
+            <a href="https://github.com/aphalswa">GitHub</a>
         </div>
     </footer>
 </body>
 </html>
-
